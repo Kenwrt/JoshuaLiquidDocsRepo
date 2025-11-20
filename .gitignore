@@ -3,3 +3,37 @@
 ################################################################################
 
 /LiquidDocsData/bin/Debug/net9.0
+# Visual Studio
+.vs/
+*.user
+*.suo
+*.cache
+*.pdb
+*.mdb
+
+# Build results
+bin/
+obj/
+out/
+Debug/
+Release/
+
+# Visual Studio Code
+.vscode/
+
+# NuGet
+*.nupkg
+packages/
+project.lock.json
+
+# Logs
+*.log
+
+# Generated files
+*.g.dart
+*.designer.cs
+
+# Application settings (keep empty template only)
+LiquidDocsSite/appsettings*.json
+LiquidDocsData/appsettings*.json
+DocumentManager/appsettings*.json

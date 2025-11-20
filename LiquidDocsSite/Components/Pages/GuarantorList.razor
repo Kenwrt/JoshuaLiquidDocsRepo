@@ -1,0 +1,133 @@
+﻿@page "/guarantorlist"
+
+@using System.Text
+@using LiquidDocsData.Models
+@using LiquidDocsData.Enums
+@using System.Globalization
+
+@rendermode InteractiveServer
+@inject GuarantorViewModel viewModel
+@inject NavigationManager NavigationManager
+@inject ISnackbar Snackbar
+@inject UserSession Session
+
+
+ <MudGrid Class="mb-10">
+
+@if (!AddEdit)
+{
+     <MudItem xs="12" md="12">
+        <MudTable Items="viewModel.RecordList" Hover="true" Bordered="true" Dense="true" @bind-SelectedItem="viewModel.SelectedRecord" RowClick="OnSelectedRecord">
+            <ToolBarContent>
+                <MudTextField @bind-Value="_search" Placeholder="Search..." />
+            </ToolBarContent>
+            <HeaderContent>
+                <MudTh>Entity Name</MudTh>
+                <MudTh>Address</MudTh>
+                <MudTh>Phone</MudTh>
+                <MudTh>Email</MudTh>
+                <MudTh>
+                </MudTh>
+                <MudTh>
+                    <MudButton Class="rounded-4" Disabled=@AddButtonDisabled Variant="Variant.Filled" Size="Size.Small" Color="Color.Primary" OnClick="AddButton">Add Guarantor</MudButton>
+                </MudTh>
+            </HeaderContent>
+            <RowTemplate>
+                <MudTd DataLabel="Enitity Name">@context.EntityName</MudTd>
+                <MudTd DataLabel="Address">@context.FullAddress</MudTd>
+                <MudTd DataLabel="Phone">@context.ContactPhoneNumber</MudTd>
+                <MudTd DataLabel="Email">@context.ContactEmail</MudTd>
+                <MudTd DataLabel="Active">
+                    <MudChip T="bool" Color="@((context.IsActive) ? Color.Success : Color.Error)">
+                        @(context.IsActive ? "Yes" : "No")
+                    </MudChip>
+                </MudTd>
+                <MudTd>
+                    <MudIconButton Icon="@Icons.Material.Filled.Edit"
+                                   Color="Color.Info"
+                                   OnClick="@(() => OnSelectedRecord(context))" />
+                    <MudButton class="ml-5" Variant="Variant.Text" OnClick="@(() => OnDeleteRecord(context))" Color="Color.Primary">Delete</MudButton>
+                </MudTd>
+            </RowTemplate>
+        </MudTable>
+    </MudItem>
+}
+else
+{
+        <MudItem xs="12" md="12">
+            <MudPaper Elevation="1" Class="mt-5" Style="background-color: #F2F2F2;">
+                
+                <br />
+
+                <MudText Class="pl-4 mt-5" Typo="Typo.h5">Guarantor</MudText>
+
+
+                <Guarantor OnGuarantorComplete="OnGuarantorComplete" OnGuarantorCancel="OnGuarantorCancel" AllowRecordEdit="true" />
+
+            </MudPaper>
+
+        </MudItem>
+}      
+</MudGrid>
+
+
+
+
+
+@code
+{
+    private bool AddEdit = false;
+   
+
+  
+    private bool AddButtonDisabled = false;
+
+    private string _search = "";
+
+    protected override async Task OnInitializedAsync()
+    {
+
+        
+    }
+
+    private void AddButton()
+    {
+        viewModel.EditingRecord = new LiquidDocsData.Models.Guarantor();
+        viewModel.EditingRecord.Id = Guid.NewGuid();
+        viewModel.EditingRecord.UserId = Guid.Parse(Session.UserId);
+
+        AddEdit = true;
+        AddButtonDisabled = true;
+
+
+    }
+
+    private void OnSelectedRecord(LiquidDocsData.Models.Guarantor guarantor)
+    {
+        if (guarantor is not null) viewModel.SelectRecordCommand.Execute(guarantor);
+
+        AddEdit = true;
+    }
+
+    private void OnDeleteRecord(LiquidDocsData.Models.Guarantor r)
+    {
+        if (r is not null) viewModel.DeleteRecordCommand.Execute(r);
+
+        AddEdit = false;
+    }
+
+    private void OnGuarantorComplete()
+    {
+        AddEdit = false;
+
+        StateHasChanged();
+    }
+
+    private void OnGuarantorCancel()
+    {
+
+        AddEdit = false;
+
+        StateHasChanged();
+    }
+}
