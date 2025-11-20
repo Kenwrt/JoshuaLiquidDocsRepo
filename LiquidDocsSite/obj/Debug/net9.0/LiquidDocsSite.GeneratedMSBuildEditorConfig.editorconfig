@@ -1,0 +1,429 @@
+is_global = true
+build_property.TargetFramework = net9.0
+build_property.TargetFramework = net9.0
+build_property.TargetPlatformMinVersion = 
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.MudDebugAnalyzer = 
+build_property.MudAllowedAttributePattern = 
+build_property.MudAllowedAttributeList = 
+build_property.MvvmToolkitEnableINotifyPropertyChangingSupport = true
+build_property._MvvmToolkitIsUsingWindowsRuntimePack = false
+build_property.CsWinRTComponent = 
+build_property.CsWinRTAotOptimizerEnabled = 
+build_property.CsWinRTAotWarningLevel = 
+build_property.RootNamespace = LiquidDocsSite
+build_property.RootNamespace = LiquidDocsSite
+build_property.ProjectDir = C:\Users\kenwr\source\repos\Kenwrt\JoshuaLiquidDocsRepo\LiquidDocsSite\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.RazorLangVersion = 9.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\kenwr\source\repos\Kenwrt\JoshuaLiquidDocsRepo\LiquidDocsSite
+build_property._RazorSourceGeneratorDebug = 
+build_property.EffectiveAnalysisLevelStyle = 9.0
+build_property.EnableCodeStyleSeverity = 
+
+[C:/Users/kenwr/source/repos/Kenwrt/JoshuaLiquidDocsRepo/LiquidDocsSite/Components/Account/Pages/AccessDenied.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xBY2NvdW50XFBhZ2VzXEFjY2Vzc0RlbmllZC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/kenwr/source/repos/Kenwrt/JoshuaLiquidDocsRepo/LiquidDocsSite/Components/Account/Pages/ConfirmEmail.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xBY2NvdW50XFBhZ2VzXENvbmZpcm1FbWFpbC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/kenwr/source/repos/Kenwrt/JoshuaLiquidDocsRepo/LiquidDocsSite/Components/Account/Pages/ConfirmEmailChange.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xBY2NvdW50XFBhZ2VzXENvbmZpcm1FbWFpbENoYW5nZS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/kenwr/source/repos/Kenwrt/JoshuaLiquidDocsRepo/LiquidDocsSite/Components/Account/Pages/ExternalLogin.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xBY2NvdW50XFBhZ2VzXEV4dGVybmFsTG9naW4ucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/kenwr/source/repos/Kenwrt/JoshuaLiquidDocsRepo/LiquidDocsSite/Components/Account/Pages/ForgotPassword.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xBY2NvdW50XFBhZ2VzXEZvcmdvdFBhc3N3b3JkLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/kenwr/source/repos/Kenwrt/JoshuaLiquidDocsRepo/LiquidDocsSite/Components/Account/Pages/ForgotPasswordConfirmation.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xBY2NvdW50XFBhZ2VzXEZvcmdvdFBhc3N3b3JkQ29uZmlybWF0aW9uLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/kenwr/source/repos/Kenwrt/JoshuaLiquidDocsRepo/LiquidDocsSite/Components/Account/Pages/InvalidPasswordReset.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xBY2NvdW50XFBhZ2VzXEludmFsaWRQYXNzd29yZFJlc2V0LnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/kenwr/source/repos/Kenwrt/JoshuaLiquidDocsRepo/LiquidDocsSite/Components/Account/Pages/InvalidUser.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xBY2NvdW50XFBhZ2VzXEludmFsaWRVc2VyLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/kenwr/source/repos/Kenwrt/JoshuaLiquidDocsRepo/LiquidDocsSite/Components/Account/Pages/Lockout.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xBY2NvdW50XFBhZ2VzXExvY2tvdXQucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/kenwr/source/repos/Kenwrt/JoshuaLiquidDocsRepo/LiquidDocsSite/Components/Account/Pages/Login.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xBY2NvdW50XFBhZ2VzXExvZ2luLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/kenwr/source/repos/Kenwrt/JoshuaLiquidDocsRepo/LiquidDocsSite/Components/Account/Pages/LoginWith2fa.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xBY2NvdW50XFBhZ2VzXExvZ2luV2l0aDJmYS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/kenwr/source/repos/Kenwrt/JoshuaLiquidDocsRepo/LiquidDocsSite/Components/Account/Pages/LoginWithRecoveryCode.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xBY2NvdW50XFBhZ2VzXExvZ2luV2l0aFJlY292ZXJ5Q29kZS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/kenwr/source/repos/Kenwrt/JoshuaLiquidDocsRepo/LiquidDocsSite/Components/Account/Pages/Manage/BillingHistory.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xBY2NvdW50XFBhZ2VzXE1hbmFnZVxCaWxsaW5nSGlzdG9yeS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/kenwr/source/repos/Kenwrt/JoshuaLiquidDocsRepo/LiquidDocsSite/Components/Account/Pages/Manage/ChangePassword.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xBY2NvdW50XFBhZ2VzXE1hbmFnZVxDaGFuZ2VQYXNzd29yZC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/kenwr/source/repos/Kenwrt/JoshuaLiquidDocsRepo/LiquidDocsSite/Components/Account/Pages/Manage/DeletePersonalData.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xBY2NvdW50XFBhZ2VzXE1hbmFnZVxEZWxldGVQZXJzb25hbERhdGEucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/kenwr/source/repos/Kenwrt/JoshuaLiquidDocsRepo/LiquidDocsSite/Components/Account/Pages/Manage/Disable2fa.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xBY2NvdW50XFBhZ2VzXE1hbmFnZVxEaXNhYmxlMmZhLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/kenwr/source/repos/Kenwrt/JoshuaLiquidDocsRepo/LiquidDocsSite/Components/Account/Pages/Manage/Email.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xBY2NvdW50XFBhZ2VzXE1hbmFnZVxFbWFpbC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/kenwr/source/repos/Kenwrt/JoshuaLiquidDocsRepo/LiquidDocsSite/Components/Account/Pages/Manage/EnableAuthenticator.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xBY2NvdW50XFBhZ2VzXE1hbmFnZVxFbmFibGVBdXRoZW50aWNhdG9yLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/kenwr/source/repos/Kenwrt/JoshuaLiquidDocsRepo/LiquidDocsSite/Components/Account/Pages/Manage/ExternalLogins.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xBY2NvdW50XFBhZ2VzXE1hbmFnZVxFeHRlcm5hbExvZ2lucy5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/kenwr/source/repos/Kenwrt/JoshuaLiquidDocsRepo/LiquidDocsSite/Components/Account/Pages/Manage/GenerateRecoveryCodes.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xBY2NvdW50XFBhZ2VzXE1hbmFnZVxHZW5lcmF0ZVJlY292ZXJ5Q29kZXMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/kenwr/source/repos/Kenwrt/JoshuaLiquidDocsRepo/LiquidDocsSite/Components/Account/Pages/Manage/Index.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xBY2NvdW50XFBhZ2VzXE1hbmFnZVxJbmRleC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/kenwr/source/repos/Kenwrt/JoshuaLiquidDocsRepo/LiquidDocsSite/Components/Account/Pages/Manage/PaymentOptions.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xBY2NvdW50XFBhZ2VzXE1hbmFnZVxQYXltZW50T3B0aW9ucy5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/kenwr/source/repos/Kenwrt/JoshuaLiquidDocsRepo/LiquidDocsSite/Components/Account/Pages/Manage/PersonalData.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xBY2NvdW50XFBhZ2VzXE1hbmFnZVxQZXJzb25hbERhdGEucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/kenwr/source/repos/Kenwrt/JoshuaLiquidDocsRepo/LiquidDocsSite/Components/Account/Pages/Manage/ResetAuthenticator.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xBY2NvdW50XFBhZ2VzXE1hbmFnZVxSZXNldEF1dGhlbnRpY2F0b3IucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/kenwr/source/repos/Kenwrt/JoshuaLiquidDocsRepo/LiquidDocsSite/Components/Account/Pages/Manage/SetPassword.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xBY2NvdW50XFBhZ2VzXE1hbmFnZVxTZXRQYXNzd29yZC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/kenwr/source/repos/Kenwrt/JoshuaLiquidDocsRepo/LiquidDocsSite/Components/Account/Pages/Manage/TwoFactorAuthentication.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xBY2NvdW50XFBhZ2VzXE1hbmFnZVxUd29GYWN0b3JBdXRoZW50aWNhdGlvbi5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/kenwr/source/repos/Kenwrt/JoshuaLiquidDocsRepo/LiquidDocsSite/Components/Account/Pages/Manage/_Imports.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xBY2NvdW50XFBhZ2VzXE1hbmFnZVxfSW1wb3J0cy5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/kenwr/source/repos/Kenwrt/JoshuaLiquidDocsRepo/LiquidDocsSite/Components/Account/Pages/RegisterConfirmation.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xBY2NvdW50XFBhZ2VzXFJlZ2lzdGVyQ29uZmlybWF0aW9uLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/kenwr/source/repos/Kenwrt/JoshuaLiquidDocsRepo/LiquidDocsSite/Components/Account/Pages/ResendEmailConfirmation.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xBY2NvdW50XFBhZ2VzXFJlc2VuZEVtYWlsQ29uZmlybWF0aW9uLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/kenwr/source/repos/Kenwrt/JoshuaLiquidDocsRepo/LiquidDocsSite/Components/Account/Pages/ResetPassword.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xBY2NvdW50XFBhZ2VzXFJlc2V0UGFzc3dvcmQucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/kenwr/source/repos/Kenwrt/JoshuaLiquidDocsRepo/LiquidDocsSite/Components/Account/Pages/ResetPasswordConfirmation.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xBY2NvdW50XFBhZ2VzXFJlc2V0UGFzc3dvcmRDb25maXJtYXRpb24ucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/kenwr/source/repos/Kenwrt/JoshuaLiquidDocsRepo/LiquidDocsSite/Components/Account/Pages/SignUp.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xBY2NvdW50XFBhZ2VzXFNpZ25VcC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/kenwr/source/repos/Kenwrt/JoshuaLiquidDocsRepo/LiquidDocsSite/Components/Account/Pages/_Imports.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xBY2NvdW50XFBhZ2VzXF9JbXBvcnRzLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/kenwr/source/repos/Kenwrt/JoshuaLiquidDocsRepo/LiquidDocsSite/Components/Account/Shared/ExternalLoginPicker.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xBY2NvdW50XFNoYXJlZFxFeHRlcm5hbExvZ2luUGlja2VyLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/kenwr/source/repos/Kenwrt/JoshuaLiquidDocsRepo/LiquidDocsSite/Components/Account/Shared/ManageLayout.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xBY2NvdW50XFNoYXJlZFxNYW5hZ2VMYXlvdXQucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/kenwr/source/repos/Kenwrt/JoshuaLiquidDocsRepo/LiquidDocsSite/Components/Account/Shared/ManageNavMenu.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xBY2NvdW50XFNoYXJlZFxNYW5hZ2VOYXZNZW51LnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/kenwr/source/repos/Kenwrt/JoshuaLiquidDocsRepo/LiquidDocsSite/Components/Account/Shared/ShowRecoveryCodes.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xBY2NvdW50XFNoYXJlZFxTaG93UmVjb3ZlcnlDb2Rlcy5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/kenwr/source/repos/Kenwrt/JoshuaLiquidDocsRepo/LiquidDocsSite/Components/Account/StatusMessage.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xBY2NvdW50XFN0YXR1c01lc3NhZ2UucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/kenwr/source/repos/Kenwrt/JoshuaLiquidDocsRepo/LiquidDocsSite/Components/App.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xBcHAucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/kenwr/source/repos/Kenwrt/JoshuaLiquidDocsRepo/LiquidDocsSite/Components/Layout/LayoutActionButtons.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xMYXlvdXRcTGF5b3V0QWN0aW9uQnV0dG9ucy5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/kenwr/source/repos/Kenwrt/JoshuaLiquidDocsRepo/LiquidDocsSite/Components/Layout/MainLayout.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xMYXlvdXRcTWFpbkxheW91dC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/kenwr/source/repos/Kenwrt/JoshuaLiquidDocsRepo/LiquidDocsSite/Components/Layout/MudBlazorNavMenu.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xMYXlvdXRcTXVkQmxhem9yTmF2TWVudS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/kenwr/source/repos/Kenwrt/JoshuaLiquidDocsRepo/LiquidDocsSite/Components/Pages/About.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xBYm91dC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/kenwr/source/repos/Kenwrt/JoshuaLiquidDocsRepo/LiquidDocsSite/Components/Pages/AccessDenied.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xBY2Nlc3NEZW5pZWQucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/kenwr/source/repos/Kenwrt/JoshuaLiquidDocsRepo/LiquidDocsSite/Components/Pages/AddressCompleteMap.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xBZGRyZXNzQ29tcGxldGVNYXAucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/kenwr/source/repos/Kenwrt/JoshuaLiquidDocsRepo/LiquidDocsSite/Components/Pages/AdminPage.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xBZG1pblBhZ2UucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/kenwr/source/repos/Kenwrt/JoshuaLiquidDocsRepo/LiquidDocsSite/Components/Pages/AkaAlias.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xBa2FBbGlhcy5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/kenwr/source/repos/Kenwrt/JoshuaLiquidDocsRepo/LiquidDocsSite/Components/Pages/Auth.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xBdXRoLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/kenwr/source/repos/Kenwrt/JoshuaLiquidDocsRepo/LiquidDocsSite/Components/Pages/Borrower.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xCb3Jyb3dlci5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/kenwr/source/repos/Kenwrt/JoshuaLiquidDocsRepo/LiquidDocsSite/Components/Pages/BorrowerList.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xCb3Jyb3dlckxpc3QucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/kenwr/source/repos/Kenwrt/JoshuaLiquidDocsRepo/LiquidDocsSite/Components/Pages/Broker.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xCcm9rZXIucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/kenwr/source/repos/Kenwrt/JoshuaLiquidDocsRepo/LiquidDocsSite/Components/Pages/BrokerList.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xCcm9rZXJMaXN0LnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/kenwr/source/repos/Kenwrt/JoshuaLiquidDocsRepo/LiquidDocsSite/Components/Pages/CardDisplay.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xDYXJkRGlzcGxheS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/kenwr/source/repos/Kenwrt/JoshuaLiquidDocsRepo/LiquidDocsSite/Components/Pages/ChatGPT.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xDaGF0R1BULnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/kenwr/source/repos/Kenwrt/JoshuaLiquidDocsRepo/LiquidDocsSite/Components/Pages/ContactUs.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xDb250YWN0VXMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/kenwr/source/repos/Kenwrt/JoshuaLiquidDocsRepo/LiquidDocsSite/Components/Pages/CookieConsent.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xDb29raWVDb25zZW50LnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/kenwr/source/repos/Kenwrt/JoshuaLiquidDocsRepo/LiquidDocsSite/Components/Pages/CookieConsentDialog.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xDb29raWVDb25zZW50RGlhbG9nLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/kenwr/source/repos/Kenwrt/JoshuaLiquidDocsRepo/LiquidDocsSite/Components/Pages/CookiePolicy.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xDb29raWVQb2xpY3kucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/kenwr/source/repos/Kenwrt/JoshuaLiquidDocsRepo/LiquidDocsSite/Components/Pages/Counter.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xDb3VudGVyLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/kenwr/source/repos/Kenwrt/JoshuaLiquidDocsRepo/LiquidDocsSite/Components/Pages/CreateWordDoc.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xDcmVhdGVXb3JkRG9jLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/kenwr/source/repos/Kenwrt/JoshuaLiquidDocsRepo/LiquidDocsSite/Components/Pages/Document.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xEb2N1bWVudC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/kenwr/source/repos/Kenwrt/JoshuaLiquidDocsRepo/LiquidDocsSite/Components/Pages/DocumentLibrary.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xEb2N1bWVudExpYnJhcnkucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/kenwr/source/repos/Kenwrt/JoshuaLiquidDocsRepo/LiquidDocsSite/Components/Pages/DocumentSetAssigment.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xEb2N1bWVudFNldEFzc2lnbWVudC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/kenwr/source/repos/Kenwrt/JoshuaLiquidDocsRepo/LiquidDocsSite/Components/Pages/DocumentSets.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xEb2N1bWVudFNldHMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/kenwr/source/repos/Kenwrt/JoshuaLiquidDocsRepo/LiquidDocsSite/Components/Pages/EntityOwner.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xFbnRpdHlPd25lci5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/kenwr/source/repos/Kenwrt/JoshuaLiquidDocsRepo/LiquidDocsSite/Components/Pages/Error.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xFcnJvci5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/kenwr/source/repos/Kenwrt/JoshuaLiquidDocsRepo/LiquidDocsSite/Components/Pages/FAQs.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xGQVFzLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/kenwr/source/repos/Kenwrt/JoshuaLiquidDocsRepo/LiquidDocsSite/Components/Pages/FileUploadPage.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xGaWxlVXBsb2FkUGFnZS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/kenwr/source/repos/Kenwrt/JoshuaLiquidDocsRepo/LiquidDocsSite/Components/Pages/Guarantor.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xHdWFyYW50b3IucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/kenwr/source/repos/Kenwrt/JoshuaLiquidDocsRepo/LiquidDocsSite/Components/Pages/GuarantorList.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xHdWFyYW50b3JMaXN0LnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/kenwr/source/repos/Kenwrt/JoshuaLiquidDocsRepo/LiquidDocsSite/Components/Pages/LandingPage.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xMYW5kaW5nUGFnZS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/kenwr/source/repos/Kenwrt/JoshuaLiquidDocsRepo/LiquidDocsSite/Components/Pages/Lender.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xMZW5kZXIucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/kenwr/source/repos/Kenwrt/JoshuaLiquidDocsRepo/LiquidDocsSite/Components/Pages/LenderList.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xMZW5kZXJMaXN0LnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/kenwr/source/repos/Kenwrt/JoshuaLiquidDocsRepo/LiquidDocsSite/Components/Pages/LoanAgeementList.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xMb2FuQWdlZW1lbnRMaXN0LnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/kenwr/source/repos/Kenwrt/JoshuaLiquidDocsRepo/LiquidDocsSite/Components/Pages/LoanDetail.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xMb2FuRGV0YWlsLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/kenwr/source/repos/Kenwrt/JoshuaLiquidDocsRepo/LiquidDocsSite/Components/Pages/LoanSummary.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xMb2FuU3VtbWFyeS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/kenwr/source/repos/Kenwrt/JoshuaLiquidDocsRepo/LiquidDocsSite/Components/Pages/MicroserviceSettingsPage.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xNaWNyb3NlcnZpY2VTZXR0aW5nc1BhZ2UucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/kenwr/source/repos/Kenwrt/JoshuaLiquidDocsRepo/LiquidDocsSite/Components/Pages/Property.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xQcm9wZXJ0eS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/kenwr/source/repos/Kenwrt/JoshuaLiquidDocsRepo/LiquidDocsSite/Components/Pages/PropertyList.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xQcm9wZXJ0eUxpc3QucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/kenwr/source/repos/Kenwrt/JoshuaLiquidDocsRepo/LiquidDocsSite/Components/Pages/PropertyOwner.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xQcm9wZXJ0eU93bmVyLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/kenwr/source/repos/Kenwrt/JoshuaLiquidDocsRepo/LiquidDocsSite/Components/Pages/PropertyOwnerList.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xQcm9wZXJ0eU93bmVyTGlzdC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/kenwr/source/repos/Kenwrt/JoshuaLiquidDocsRepo/LiquidDocsSite/Components/Pages/QuickLoanAgreement.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xRdWlja0xvYW5BZ3JlZW1lbnQucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/kenwr/source/repos/Kenwrt/JoshuaLiquidDocsRepo/LiquidDocsSite/Components/Pages/QuickLoanBorrower.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xRdWlja0xvYW5Cb3Jyb3dlci5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/kenwr/source/repos/Kenwrt/JoshuaLiquidDocsRepo/LiquidDocsSite/Components/Pages/QuickLoanBroker.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xRdWlja0xvYW5Ccm9rZXIucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/kenwr/source/repos/Kenwrt/JoshuaLiquidDocsRepo/LiquidDocsSite/Components/Pages/QuickLoanGuarantor.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xRdWlja0xvYW5HdWFyYW50b3IucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/kenwr/source/repos/Kenwrt/JoshuaLiquidDocsRepo/LiquidDocsSite/Components/Pages/QuickLoanLender.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xRdWlja0xvYW5MZW5kZXIucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/kenwr/source/repos/Kenwrt/JoshuaLiquidDocsRepo/LiquidDocsSite/Components/Pages/QuickLoanProperty.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xRdWlja0xvYW5Qcm9wZXJ0eS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/kenwr/source/repos/Kenwrt/JoshuaLiquidDocsRepo/LiquidDocsSite/Components/Pages/Register.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xSZWdpc3Rlci5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/kenwr/source/repos/Kenwrt/JoshuaLiquidDocsRepo/LiquidDocsSite/Components/Pages/SendEmailPage.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xTZW5kRW1haWxQYWdlLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/kenwr/source/repos/Kenwrt/JoshuaLiquidDocsRepo/LiquidDocsSite/Components/Pages/SendNotificationPage.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xTZW5kTm90aWZpY2F0aW9uUGFnZS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/kenwr/source/repos/Kenwrt/JoshuaLiquidDocsRepo/LiquidDocsSite/Components/Pages/SignatureAuthority.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xTaWduYXR1cmVBdXRob3JpdHkucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/kenwr/source/repos/Kenwrt/JoshuaLiquidDocsRepo/LiquidDocsSite/Components/Pages/TestMergeByDocument.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xUZXN0TWVyZ2VCeURvY3VtZW50LnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/kenwr/source/repos/Kenwrt/JoshuaLiquidDocsRepo/LiquidDocsSite/Components/Pages/UploadFile.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xVcGxvYWRGaWxlLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/kenwr/source/repos/Kenwrt/JoshuaLiquidDocsRepo/LiquidDocsSite/Components/Pages/WhyAreWeDifferent.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xXaHlBcmVXZURpZmZlcmVudC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/kenwr/source/repos/Kenwrt/JoshuaLiquidDocsRepo/LiquidDocsSite/Components/Pages/WordEditor.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xXb3JkRWRpdG9yLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/kenwr/source/repos/Kenwrt/JoshuaLiquidDocsRepo/LiquidDocsSite/Components/Routes.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xSb3V0ZXMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/kenwr/source/repos/Kenwrt/JoshuaLiquidDocsRepo/LiquidDocsSite/Components/_Imports.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xfSW1wb3J0cy5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/kenwr/source/repos/Kenwrt/JoshuaLiquidDocsRepo/LiquidDocsSite/Components/Pages/DashBoard.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xEYXNoQm9hcmQucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-y7132u7p2p

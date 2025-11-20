@@ -1,0 +1,358 @@
+﻿﻿
+
+@using System.Text;
+@using LiquidDocsData.Models;
+@using System.Globalization;
+@using System.Collections.ObjectModel;
+@using LiquidDocsData.Models.MergeDTOs;
+
+@rendermode InteractiveServer
+@inject EntityOwnerViewModel vm
+@inject NavigationManager NavigationManager
+@inject ISnackbar Snackbar
+@inject EntityOwnerValidator EntityOwnerValidator
+@inject UserSession Session
+
+
+@if (!String.IsNullOrEmpty(searchString))
+{
+    <MudGrid>
+
+        <MudItem xs="12" md="12">
+
+            <MudText class="pl-4 mt-5" Typo="Typo.h6">Existing Entity Owners</MudText>
+            <MudTable Items="@SearchReload()" Context="ContextEntity" Hover="true" Bordered="true" Dense="true" @bind-SelectedItem="vm.SelectedRecord" @ref="searchTable" RowClick="OnSelectedAlias" T="LiquidDocsData.Models.EntityOwner">
+                <ToolBarContent>
+                    <MudTextField T="string" Immediate="true" ValueChanged="@(s => OnSearchAsync(s))" Placeholder="Search for Existing Owners" Adornment="Adornment.Start"
+                                  AdornmentIcon="@Icons.Material.Filled.Search" IconSize="Size.Medium" Class="pa-4 mt-5"></MudTextField>
+                </ToolBarContent>
+                <HeaderContent>
+                    <MudTh>Name</MudTh>
+                    <MudTh>Email</MudTh>
+                    <MudTh>Add</MudTh>
+                    <MudTh>
+                        <MudButton Variant="Variant.Text"
+                                   Color="Color.Error"
+                                   Class="mud-link"
+                                   OnClick="SearchBackAsync">
+                            Back
+                        </MudButton>
+                    </MudTh>
+
+                </HeaderContent>
+                <RowTemplate>
+                    <MudTd DataLabel="Name">@ContextEntity.Name</MudTd>
+                    <MudTd DataLabel="Title">@ContextEntity.Email</MudTd>
+                    <MudTd>
+                        <MudIconButton Icon="@Icons.Material.Filled.Add" Color="Color.Info" OnClick="@(() => AddRecordForEdit(ContextEntity))" />
+                    </MudTd>
+                </RowTemplate>
+                <NoRecordsContent>
+                    <MudText Color="Color.Secondary" Class="pa-4">
+                        🚫 No Active Entity Owners Found!
+                    </MudText>
+                </NoRecordsContent>
+            </MudTable>
+        </MudItem>
+
+    </MudGrid>
+}
+else
+{
+    @if (displayEntityOwnerList)
+    {
+        <MudGrid Class="">
+
+            <MudItem xs="12" md="12">
+
+                <MudText Class="pl-4 ml-4 mt-5" Typo="Typo.subtitle1">Owners: @vm.RecordList.Count </MudText>
+                <MudTable Class="ml-4 mr-5" Style="background-color: #FCFCFC;" Items="vm.RecordList" Context="context" Hover="true" Bordered="true" Dense="true" @bind-SelectedItem="vm.SelectedRecord" RowClick="OnSelectedRecord">
+                    <HeaderContent>
+                        <MudTh>Name</MudTh>
+                        <MudTh>% Owner</MudTh>
+                        <MudTh></MudTh>
+                        <MudTh HeaderCellClass="text-right">
+                            <MudButton Class="pl-4 rounded-4" Disabled=@AddButtonDisabled Variant="Variant.Filled" Size="Size.Small" Color="Color.Primary" OnClick="AddButton">Add Owner</MudButton>
+                        </MudTh>
+
+                    </HeaderContent>
+                    <RowTemplate>
+                        <MudTd DataLabel="Name">@context.Name</MudTd>
+                        <MudTd DataLabel="Alias">@context.Email</MudTd>
+                        <MudTd DataLabel="Alias">@context.PercentOfOwnership</MudTd>
+
+                        <MudTd>
+                            <MudIconButton Icon="@Icons.Material.Filled.Edit"
+                                           Color="Color.Info"
+                                           OnClick="@(() => OnSelectedRecord(context))" />
+                            <MudIconButton Icon="@Icons.Material.Filled.Remove" Color="Color.Info" OnClick="@(() => DeleteRecordAsync(context))" />
+                        </MudTd>
+                    </RowTemplate>
+                    <NoRecordsContent>
+                        <MudText Color="Color.Secondary" Class="pa-4">
+                            🚫 No Active Entity Owners Found. Please add!
+                        </MudText>
+                    </NoRecordsContent>
+
+                </MudTable>
+
+            </MudItem>
+
+        </MudGrid>
+
+    }
+    else
+    {
+        <MudGrid>
+
+            <MudItem xs="12" md="12">
+
+                <MudText Class="pl-4 mt-0" Typo="Typo.subtitle1">Entity Ownership</MudText>
+
+                <MudTextField T="string" Immediate="true" ValueChanged="@(s => OnSearchAsync(s))" Placeholder="Search for Existing Entity Owners" Adornment="Adornment.Start"
+                              AdornmentIcon="@Icons.Material.Filled.Search" IconSize="Size.Medium" Class="pa-2"></MudTextField>
+
+                <MudForm Context="contextA" Model="@vm.EditingRecord" @ref="@form" Validation="@EntityOwnerValidator" ValidationDelay="0">
+                    <MudGrid>
+                        <MudItem md="6">
+                            <div class="d-flex flex-column gap-2">
+                                <MudTextField Class="pl-4" Variant="Variant.Outlined" Style="background-color: white;" @bind-Value="vm.EditingRecord.Name" Label="Name" Required="true" />
+
+                                <MudTextField Class="pl-4" Variant="Variant.Outlined" Style="background-color: white;" @bind-Value="vm.EditingRecord.Email" Label="Email" Required="true" />
+                                <MudTextField Class="pl-4" Variant="Variant.Outlined" Style="background-color: white;" @bind-Value="vm.EditingRecord.PhoneNumber" Label="Phone" Required="true" />
+                                <MudTextField Class="pl-4" Variant="Variant.Outlined" Style="background-color: white;" @bind-Value="vm.EditingRecord.FullAddress" Label="Address" Required="true" />
+                                <MudSelect Class="ml-4" T="LiquidDocsData.Enums.Entity.ContactRoles" Style="background-color: white;" Variant="Variant.Outlined" Label="Select Entity Role" @bind-Value="vm.EditingRecord.EntityRole" Dense="true">
+
+                                    @foreach (var gt in Enum.GetValues<LiquidDocsData.Enums.Entity.ContactRoles>())
+                                    {
+                                        <MudSelectItem Style="background-color: white;" T="LiquidDocsData.Enums.Entity.ContactRoles" Value="gt">@gt.GetDescription()</MudSelectItem>
+                                    }
+
+                                </MudSelect>
+
+                                <MudNumericField T="decimal" Class="pl-4" Style="background-color: white;" Variant="Variant.Outlined" @bind-Value="vm.EditingRecord.PercentOfOwnership" Min="0" Max="100" Step="0.01m"
+                                     Immediate="true" HideSpinButtons="true" Adornment="Adornment.End" AdornmentText="%" Required="true" Label="% of Ownership" Rules="@PercentRules" />
+
+                                <MudStack Row="true" Spacing="10" Class="mt-4 mb-10">
+
+                                    <MudButton Class="ml-10" Type="Submit" OnClick="HandleSubmit" Color="Color.Success" Variant="Variant.Filled">@(vm.SelectedRecord == null ? "Add" : "Save")</MudButton>
+                                   
+                                    <MudButton OnClick="ClearSelection" Color="Color.Secondary" Variant="Variant.Filled">Clear</MudButton>
+
+                                </MudStack>
+                            </div>
+
+                        </MudItem>
+
+                    </MudGrid>
+
+                </MudForm>
+
+            </MudItem>
+
+        </MudGrid>
+
+    }
+}
+
+
+@code {
+
+    [Parameter] public EventCallback<List<LiquidDocsData.Models.EntityOwner>> OnEntityOwnerComplete { get; set; }
+    [Parameter] public EventCallback OnEntityOwnerCanceled { get; set; }
+    [Parameter] public List<LiquidDocsData.Models.EntityOwner> OwnerList { get; set; }
+
+
+    public decimal RatePercent { get; set; } = 7.5m;
+
+    private IEnumerable<Func<decimal, string>> PercentRules => new Func<decimal, string>[] 
+    {
+            v => (v >= 0 && v <= 100) ? null : "Enter 0–100"
+    };
+    
+
+    public MudTable<LiquidDocsData.Models.EntityOwner> listTable = null;
+
+    private MudTable<LiquidDocsData.Models.EntityOwner> searchTable = new();
+
+    private MudForm form;
+
+    private bool displayEntityOwnerList = false;
+    private bool AddButtonDisabled = false;
+
+    private List<LiquidDocsData.Models.EntityOwner> searchList = new();
+
+
+    private string searchString = "";
+    private string _search = "";
+    private string emailPattern = @"^[\w\-\.]+@([\w\-]+\.)+[\w\-]{2,4}$";
+    private string ssnMask = "000-00-0000";
+
+
+    private int editingIndex = -1;
+
+    protected override async Task OnInitializedAsync()
+    {
+        if (vm.EditingRecord is null) vm.InitializeRecordCommand.Execute(null);
+
+        vm.RecordList = OwnerList is not null ? new ObservableCollection<LiquidDocsData.Models.EntityOwner>(OwnerList) : new ObservableCollection<LiquidDocsData.Models.EntityOwner>();
+
+
+        displayEntityOwnerList = true;
+    }
+
+    private async Task HandleSubmit()
+    {
+        await form.Validate();
+
+        if (!form.IsValid)
+        {
+            Snackbar.Add("Please correct the errors in the form.", Severity.Error);
+            return;
+        }
+        else
+        {
+            if (!vm.RecordList.Any(x => x.Id == vm.EditingRecord.Id))
+            {
+
+                if (!vm.RecordList.Any(x => x.Name == vm.EditingRecord.Name))
+                {
+                    vm.AddRecordCommand.Execute(null);
+
+                    await OnEntityOwnerComplete.InvokeAsync(vm.RecordList.ToList());
+
+                }
+                else
+                {
+                    Snackbar.Add("A Duplicate Name can exists.", Severity.Error);
+                    return;
+                }
+            }
+            else
+            {
+                vm.EditRecordCommand.Execute(null);
+
+                await OnEntityOwnerComplete.InvokeAsync(vm.RecordList.ToList());
+
+            }
+
+            displayEntityOwnerList = true;
+
+            StateHasChanged();
+
+            AddButtonDisabled = false;
+        }
+    }
+
+    private async Task OnSearchAsync(string s)
+    {
+        searchString = s;
+
+        searchTable.ReloadServerData();
+    }
+
+    private async Task SearchBackAsync()
+    {
+        searchString = "";
+    }
+
+    private IEnumerable<LiquidDocsData.Models.EntityOwner> SearchReload()
+    {
+        searchList = vm.RecordList.Where(element =>
+        {
+            if (element.Name.Contains(searchString, StringComparison.OrdinalIgnoreCase)) return true;
+
+            return false;
+
+        }).ToList();
+
+        int totalItems = searchList.Count();
+
+        IEnumerable<LiquidDocsData.Models.EntityOwner> pagedData = searchList;
+
+        return pagedData;
+    }
+
+    private async Task DeleteRecordAsync(LiquidDocsData.Models.EntityOwner entityOwner)
+    {
+        vm.RecordList.Remove(entityOwner);
+
+        vm.ClearSelectionCommand.Execute(null);
+
+       
+        displayEntityOwnerList = true;
+        
+
+        await OnEntityOwnerComplete.InvokeAsync(vm.RecordList.ToList());
+
+        StateHasChanged();
+
+
+    }
+
+    private void ClearSelection()
+    {
+        vm.ClearSelectionCommand.Execute(null);
+        StateHasChanged();
+    }
+
+    private void AddRecordForEdit(LiquidDocsData.Models.EntityOwner r)
+    {
+        vm.EditingRecord = r;
+
+        searchString = "";
+
+        AddButtonDisabled = true;
+
+        StateHasChanged();
+    }
+
+    private void AddButton()
+    {
+        vm.AddButtonCommand.Execute(null);
+
+        AddButtonDisabled = false;
+
+        displayEntityOwnerList = false;
+    }
+
+    private void AddAdditionalButton()
+    {
+        vm.AddButtonCommand.Execute(null);
+
+        AddButtonDisabled = true;
+
+        displayEntityOwnerList = false;
+    }
+
+    private void OnSelectedRecord(LiquidDocsData.Models.EntityOwner entityOwner)
+    {
+
+        if (entityOwner is not null) vm.SelectRecordCommand.Execute(entityOwner);
+
+        displayEntityOwnerList = false;
+
+    }
+
+    private async Task EditRecordAsync(LiquidDocsData.Models.EntityOwner entityOwner)
+    {
+        OnSelectedRecord(entityOwner);
+
+        displayEntityOwnerList = false;
+
+        StateHasChanged();
+
+    }
+
+    private void CancelEdit()
+    {
+        editingIndex = -1;
+
+        StateHasChanged();
+    }
+
+    
+
+
+
+}

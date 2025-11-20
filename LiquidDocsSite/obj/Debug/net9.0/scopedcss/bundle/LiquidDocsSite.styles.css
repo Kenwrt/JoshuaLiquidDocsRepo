@@ -1,0 +1,23 @@
+@import '_content/AuralizeBlazor/AuralizeBlazor.tf5u2o3oxg.bundle.scp.css';
+@import '_content/Nextended.Blazor/Nextended.Blazor.tkxqvq0zjw.bundle.scp.css';
+
+/* _content/LiquidDocsSite/Components/Pages/DashBoard.razor.rz.scp.css */
+.pastel-card[b-y7132u7p2p] {
+    border-radius: 18px !important;
+    box-shadow: 0 4px 20px 0 rgba(50, 50, 93, 0.12), 0 1.5px 5px 0 rgba(0, 0, 0, 0.07) !important;
+    transition: box-shadow 0.2s;
+    margin-bottom: 1rem;
+    background: var(--pastel-bg, #fff);
+}
+
+    .pastel-card:hover[b-y7132u7p2p] {
+        box-shadow: 0 8px 32px 0 rgba(50, 50, 93, 0.22), 0 4px 12px 0 rgba(0, 0, 0, 0.15) !important;
+    }
+
+.gradient-text[b-y7132u7p2p] {
+    background: linear-gradient(to right, royalblue, purple);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+}

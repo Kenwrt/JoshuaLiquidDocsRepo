@@ -1,0 +1,13 @@
+C:\Users\kenwr\source\repos\Kenwrt\JoshuaLiquidDocsRepo\LiquidDocsData\bin\Debug\net9.0\LiquidDocsData.deps.json
+C:\Users\kenwr\source\repos\Kenwrt\JoshuaLiquidDocsRepo\LiquidDocsData\bin\Debug\net9.0\LiquidDocsData.dll
+C:\Users\kenwr\source\repos\Kenwrt\JoshuaLiquidDocsRepo\LiquidDocsData\bin\Debug\net9.0\LiquidDocsData.pdb
+C:\Users\kenwr\source\repos\Kenwrt\JoshuaLiquidDocsRepo\LiquidDocsData\obj\Debug\net9.0\LiquidDocsData.csproj.AssemblyReference.cache
+C:\Users\kenwr\source\repos\Kenwrt\JoshuaLiquidDocsRepo\LiquidDocsData\obj\Debug\net9.0\LiquidDocsData.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\kenwr\source\repos\Kenwrt\JoshuaLiquidDocsRepo\LiquidDocsData\obj\Debug\net9.0\LiquidDocsData.AssemblyInfoInputs.cache
+C:\Users\kenwr\source\repos\Kenwrt\JoshuaLiquidDocsRepo\LiquidDocsData\obj\Debug\net9.0\LiquidDocsData.AssemblyInfo.cs
+C:\Users\kenwr\source\repos\Kenwrt\JoshuaLiquidDocsRepo\LiquidDocsData\obj\Debug\net9.0\LiquidDocsData.csproj.CoreCompileInputs.cache
+C:\Users\kenwr\source\repos\Kenwrt\JoshuaLiquidDocsRepo\LiquidDocsData\obj\Debug\net9.0\LiquidDocsData.sourcelink.json
+C:\Users\kenwr\source\repos\Kenwrt\JoshuaLiquidDocsRepo\LiquidDocsData\obj\Debug\net9.0\LiquidDocsData.dll
+C:\Users\kenwr\source\repos\Kenwrt\JoshuaLiquidDocsRepo\LiquidDocsData\obj\Debug\net9.0\refint\LiquidDocsData.dll
+C:\Users\kenwr\source\repos\Kenwrt\JoshuaLiquidDocsRepo\LiquidDocsData\obj\Debug\net9.0\LiquidDocsData.pdb
+C:\Users\kenwr\source\repos\Kenwrt\JoshuaLiquidDocsRepo\LiquidDocsData\obj\Debug\net9.0\ref\LiquidDocsData.dll
